@@ -1,12 +1,4 @@
-apply plugin: "org.grails.grails-profile"
-
-group 'org.grails.profiles'
-version project.projectVersion
-
-apply plugin: "org.grails.grails-profile-publish"
 grailsPublish {
-    githubSlug = 'grails-profiles/plugin'
-    license = 'Apache-2.0'
     title = "Grails Plugin Profile"
     desc = "A profile for all plugin profiles to extend from"
     developers = [graemerocher:'Graeme Rocher']

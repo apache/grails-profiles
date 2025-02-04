@@ -1,32 +1,39 @@
 buildscript {
     repositories {
-        gradlePluginPortal()
         mavenCentral()
         maven { url "https://repo.grails.org/grails/core" }
         // mavenLocal()  // for local testing, do not commit uncommented
     }
     dependencies {
         classpath "org.grails:grails-gradle-plugin:$grailsGradlePluginVersion"
+        classpath "org.apache.groovy:groovy-jmx:$groovyVersion"
     }
 }
 
-
-
-apply plugin: "org.grails.grails-profile"
-
-group 'org.grails.profiles'
-version project.projectVersion
-
-apply plugin: "org.grails.grails-profile-publish"
-
 allprojects {
+    group 'org.grails.profiles'
+    version project.projectVersion
+}
+
+
+subprojects { Project subproject ->
+    apply plugin: "org.grails.grails-profile"
+
+    apply plugin: "org.grails.grails-profile-publish"
+
     repositories {
         mavenCentral()
         maven { url "https://repo.grails.org/grails/core" }
         // mavenLocal()  // for local testing, do not commit uncommented
     }
-}
 
-dependencies {
-
+    grailsPublish {
+        githubSlug = 'grails/grails-profiles'
+        license {
+            name = 'Apache-2.0'
+        }
+        title = "Grails Profile"
+        desc = "A profile"
+        developers = [graemerocher:'Graeme Rocher']
+    }
 }
