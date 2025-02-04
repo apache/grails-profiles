@@ -1,12 +1,4 @@
-apply plugin: "org.grails.grails-profile"
-
-group 'org.grails.profiles'
-version project.projectVersion
-
-apply plugin: "org.grails.grails-profile-publish"
 grailsPublish {
-    githubSlug = 'grails-profiles/angular'
-    license = 'Apache-2.0'
     title = "Angular Profile"
     desc = "A profile for creating applications with Angular"
     developers = [jameskleeh:"James Kleeh",willbuck:"Will Buck",puneetbehl:"Puneet Behl"]

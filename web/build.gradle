@@ -1,16 +1,4 @@
-apply plugin: "org.grails.grails-profile"
-
-group 'org.grails.profiles'
-version project.projectVersion
-
-dependencies {
-    profileRuntimeOnly project(":base")
-}
-
-apply plugin: "org.grails.grails-profile-publish"
 grailsPublish {
-	githubSlug = 'grails-profiles/web'
-	license = 'Apache-2.0'
 	title = "Grails Web Profile"
 	desc = "A profile for Web applications"
 	developers = [graemerocher:'Graeme Rocher']

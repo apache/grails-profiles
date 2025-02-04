@@ -1,12 +1,4 @@
-apply plugin: "org.grails.grails-profile"
-
-group 'org.grails.profiles'
-version project.projectVersion
-
-apply plugin: "org.grails.grails-profile-publish"
 grailsPublish {
-	githubSlug = 'grails-profiles/rest-api-plugin'
-	license = 'Apache-2.0'
 	title = "Grails REST API Plugin Profile"
 	desc = "A profile for REST API plugins"
 	developers = [graemerocher:'Graeme Rocher']
