@@ -7,4 +7,4 @@ dependencies {
     profileRuntimeOnly project(":rest-api")
 }
 
-compileProfile.dependsOn(':rest-api:jarProfile')
+compileProfile.dependsOn(':rest-api:profileJar')

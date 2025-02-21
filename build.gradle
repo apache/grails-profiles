@@ -39,7 +39,7 @@ subprojects { Project subproject ->
     }
 
     if ( subproject.name != "base" ) {
-        compileProfile.dependsOn(':base:jarProfile')
+        compileProfile.dependsOn(':base:profileJar')
     }
 
 }

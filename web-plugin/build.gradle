@@ -9,4 +9,4 @@ dependencies {
     profileRuntimeOnly project(":web")
 }
 
-compileProfile.dependsOn(':web:jarProfile', ':plugin:jarProfile')
+compileProfile.dependsOn(':web:profileJar', ':plugin:profileJar')
