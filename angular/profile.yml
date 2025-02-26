@@ -13,9 +13,6 @@ instructions: |
     E.g., from the `client` directory, start the client application: `npm start`
 skeleton:
     excludes:
-        - gradlew
-        - gradlew.bat
-        - gradle/
         - gradle.properties
         - settings.gradle
     parent:
