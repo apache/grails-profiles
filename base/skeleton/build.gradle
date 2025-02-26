@@ -3,6 +3,7 @@ buildscript {
 @buildRepositories@
     }
     dependencies {
+        classpath platform("org.grails:grails-bom:$grailsVersion")
 @buildDependencies@
     }
 }
@@ -25,6 +26,7 @@ configurations {
 }
 
 dependencies {
+    implementation platform("org.grails:grails-bom:$grailsVersion")
     developmentOnly("org.springframework.boot:spring-boot-devtools")
 @dependencies@
 }
