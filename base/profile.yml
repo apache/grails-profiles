@@ -27,6 +27,8 @@ dependencies:
     - scope: implementation
       coords: "org.springframework.boot:spring-boot-autoconfigure"
     - scope: implementation
+      coords: "org.springframework.boot:spring-boot-starter"
+    - scope: implementation
       coords: "org.grails:grails-core"
     - scope: testImplementation
       coords: "org.grails:grails-gorm-testing-support"

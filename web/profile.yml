@@ -1,8 +1,7 @@
 description: Profile for Web applications
 features:
     defaults: 
-        - hibernate5   
-        - events     
+        - hibernate5
         - geb2
     required:
         - gsp
@@ -35,10 +34,8 @@ dependencies:
     - scope: implementation
       coords: "org.grails:grails-plugin-interceptors"
     - scope: implementation
-      coords: "org.grails.plugins:cache"
-    - scope: implementation
-      coords: "org.grails.plugins:async"
-    - scope: implementation
       coords: "org.grails.plugins:scaffolding"
     - scope: testImplementation
       coords: "org.grails:grails-web-testing-support"
+    - scope: testImplementation
+      coords: "org.spockframework:spock-core"
