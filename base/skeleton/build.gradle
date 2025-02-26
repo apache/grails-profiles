@@ -1,6 +1,7 @@
 buildscript {
     repositories {
 @buildRepositories@
+        mavenCentral()
     }
     dependencies {
         classpath platform("org.grails:grails-bom:$grailsVersion")
@@ -18,13 +19,6 @@ repositories {
 @repositories@
 }
 
-configurations {
-    developmentOnly
-    runtimeClasspath {
-        extendsFrom developmentOnly
-    }
-}
-
 dependencies {
     implementation platform("org.grails:grails-bom:$grailsVersion")
     developmentOnly("org.springframework.boot:spring-boot-devtools")
@@ -32,23 +26,7 @@ dependencies {
 @dependencies@
 }
 
-bootRun {
-    ignoreExitValue true
-    jvmArgs(
-        '-Dspring.output.ansi.enabled=always', 
-        '-noverify', 
-        '-XX:TieredStopAtLevel=1',
-        '-Xmx1024m')
-    sourceResources sourceSets.main
-    String springProfilesActive = 'spring.profiles.active'
-    systemProperty springProfilesActive, System.getProperty(springProfilesActive)
-}
-
-tasks.withType(GroovyCompile) {
-    configure(groovyOptions) {
-        forkOptions.jvmArgs = ['-Xmx1024m']
-    }
-}
+compileJava.options.release = 17
 
 tasks.withType(Test) {
     useJUnitPlatform()
