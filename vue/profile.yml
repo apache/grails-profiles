@@ -12,9 +12,6 @@ instructions: |
 
 skeleton:
     excludes:
-        - gradlew
-        - gradlew.bat
-        - gradle/
     parent:
         target: server
 features:

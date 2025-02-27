@@ -5,8 +5,9 @@ buildscript {
         // mavenLocal()  // for local testing, do not commit uncommented
     }
     dependencies {
-        classpath "org.grails:grails-gradle-plugin:$grailsGradlePluginVersion"
-        classpath "org.apache.groovy:groovy-jmx:$groovyVersion"
+        classpath platform("org.grails:grails-bom:$grailsVersion")
+        classpath "org.grails:grails-gradle-plugin"
+        classpath "org.apache.groovy:groovy-jmx"
     }
 }
 
