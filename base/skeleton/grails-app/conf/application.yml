@@ -27,6 +27,7 @@ spring:
                 - '**/*.gsp'
                 - '*.gson'
                 - '**/*.gson'
+                - 'logback-spring.xml'
                 - '*.properties'
 environments:
     development:
