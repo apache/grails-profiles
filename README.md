@@ -39,9 +39,11 @@ Create **USER_HOME/.grails/settings.groovy**
     mkdir testProfiles
     cd testProfiles/
     {path to grails-shell cli snapshot}/grails create-app TestProfile
+    ./gradlew dependencies --refresh-dependencies
 
 ### Iterative testing of profile changes
 - Review TestProfile application
+- force the application to pull the mavenLocal() profile into the generated application with **./gradlew dependencies --refresh-dependencies**
 - makes changes to grails-profiles project
 - republish grails-profiles to mavenLocal()
 - delete contents of TestProfile application
