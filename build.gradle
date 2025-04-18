@@ -1,6 +1,7 @@
 buildscript {
     repositories {
         mavenCentral()
+        maven { url "https://repository.apache.org/content/groups/snapshots/" }
         maven { url "https://repo.grails.org/grails/core" }
         // mavenLocal()  // for local testing, do not commit uncommented
     }
@@ -25,6 +26,7 @@ subprojects { Project subproject ->
 
     repositories {
         mavenCentral()
+        maven { url "https://repository.apache.org/content/groups/snapshots/" }
         maven { url "https://repo.grails.org/grails/core" }
         // mavenLocal()  // for local testing, do not commit uncommented
     }
