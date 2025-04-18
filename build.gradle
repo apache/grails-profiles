@@ -9,6 +9,7 @@ buildscript {
         classpath platform("org.grails:grails-bom:$grailsVersion")
         classpath "org.grails:grails-gradle-plugin"
         classpath "org.apache.groovy:groovy-jmx"
+        classpath "org.apache.grails:grails-shell-cli"
     }
 }
 
