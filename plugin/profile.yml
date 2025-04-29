@@ -6,6 +6,6 @@ build:
         - org.apache.grails.gradle.grails-app
 dependencies:
     - scope: implementation
-      coords: "org.apache.grails.gradle:grails-app"
+      coords: "org.apache.grails:grails-core"
 
 

@@ -19,7 +19,7 @@ dependencies:
     - scope: implementation
       coords: "org.apache.grails:grails-url-mappings"
     - scope: implementation
-      coords: "org.apache.grails:grails-rest-transforms "
+      coords: "org.apache.grails:grails-rest-transforms"
     - scope: implementation
       coords: "org.apache.grails:grails-codecs"
     - scope: implementation
@@ -45,6 +45,6 @@ dependencies:
     - scope: testImplementation
       coords: "org.apache.grails:grails-testing-support-datamapping"
     - scope: testImplementation
-      coords: "org.apache.grails: grails-testing-support-views-gson"
+      coords: "org.apache.grails:grails-testing-support-views-gson"
     - scope: testImplementation
       coords: "org.hibernate.validator:hibernate-validator"
