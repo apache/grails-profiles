@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="#JAVA_HOME" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/angular" />
+            <option value="$PROJECT_DIR$/base" />
+            <option value="$PROJECT_DIR$/plugin" />
+            <option value="$PROJECT_DIR$/profile" />
+            <option value="$PROJECT_DIR$/react" />
+            <option value="$PROJECT_DIR$/rest-api" />
+            <option value="$PROJECT_DIR$/rest-api-plugin" />
+            <option value="$PROJECT_DIR$/vue" />
+            <option value="$PROJECT_DIR$/web" />
+            <option value="$PROJECT_DIR$/web-plugin" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

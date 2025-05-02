@@ -1,6 +1,0 @@
-grailsPublish {
-	title = "Grails Profile Profile"
-	desc = "A profile to create profiles"
-	developers = [graemerocher:'Graeme Rocher']
-}    
-
