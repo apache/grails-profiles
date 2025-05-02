@@ -1,4 +1,0 @@
-description: A profile for creating new Grails profiles
-skeleton:
-    executable: ["**/gradlew*", "**/grailsw*"]
-    binaryExtensions: ['jar']
